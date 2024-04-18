@@ -1,6 +1,32 @@
 ---
+
 ---
 
-<a href="/">Home</a>
-<a href="/about/">About</a>
-<a href="/blog/">Blog</a>
+<nav>
+  <h1>Astro</h1>
+  <div>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+  </div>
+</nav>
+
+<style>
+  h1 {
+    color: rgb(229 229 229);    
+  }
+  a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(229 229 229);
+    font-weight: bold;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: rgb(2 6 23);
+    height: 5em;
+  }
+</style>
