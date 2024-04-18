@@ -1,0 +1,17 @@
+---
+import "./style.css";
+import GithubIcon from "../icons/Github.astro";
+import LinkedinIcon from "../icons/Linkedin.astro";
+import Badge from "../Badge.astro";
+const github = "https://github.com/hmmatus";
+const linkedin = "https://www.linkedin.com/in/hmmatus/";
+---
+
+<footer>
+  <h3 class="text">Astro Page</h3>
+  <section class="container">
+    <Badge href={linkedin}><LinkedinIcon color="#000"/></Badge>
+    <Badge href={github}><GithubIcon/></Badge>
+  </section>
+  <p class="text">© 2024 Hector Matus</p>
+</footer>
