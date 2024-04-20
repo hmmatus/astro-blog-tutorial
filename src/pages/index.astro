@@ -1,9 +1,12 @@
 ---
 import "../styles/global.css";
 import Layout from "../components/layouts/Layout.astro";
+import Greeting from "../components/Greetings";
 const pageTitle = "Home Page";
 ---
 
 <Layout title="Home Page">
   <h1>{pageTitle}</h1>
+  {/** client:load tells astro to send and rerun the Js on the client when the page loads */}
+  <Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
 </Layout>
